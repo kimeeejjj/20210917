@@ -1,7 +1,7 @@
 package co.yedam.kyobo;
 //도서정보:도서제목,저자,출판사,가격
 public class Book {
-	//필드생성
+	//필드생성-객체의 고유 데이터, 상태
 	private String title;
 	private String author;
 	private String press;

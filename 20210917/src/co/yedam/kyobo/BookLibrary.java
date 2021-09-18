@@ -82,8 +82,7 @@ public class BookLibrary { // start of class
 				System.out.println("도서삭제메뉴입니다.");
 				String search = readStr("삭제할 도서명을 입력하세요.");
 				for (int i = 0; i < kyoboLib.length; i++) {
-					if (kyoboLib[i] != null && kyoboLib[i].getTitle().indexOf(search) != -1) // indexOf():
-																								// 값입력해주면()안에문장을출력??
+					if (kyoboLib[i] != null && kyoboLib[i].getTitle().indexOf(search) != -1) // indexOf():																		// 값입력해주면()안에문장을출력??
 						kyoboLib[i] = null;
 				}
 				System.out.println("삭제완료.");

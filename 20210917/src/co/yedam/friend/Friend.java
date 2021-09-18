@@ -3,12 +3,12 @@ package co.yedam.friend;
 public class Friend {
  //이름,연락처,e-mail,키,몸무게.
 	private String name;
-	private int phone;
+	private String phone;
 	private String email;
 	private double high;
 	private double weight;
 	
-	public Friend(String name,int phone,String email,double high,double weight) {
+	public Friend(String name,String phone,String email,double high,double weight) {
 		this.name = name;
 		this.phone = phone;
 		this.email = email;
@@ -22,10 +22,10 @@ public class Friend {
 	public String getName() {
 		return name;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public int getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 	
@@ -46,6 +46,11 @@ public class Friend {
 	}
 	public double getWeight() {
 		return weight;
+	}
+	
+	public void showInfo() {
+		System.out.printf("[이름:%s,연락처:%s,이메일:%s,키:%f,몸무게:%f]\n",
+							name,phone,email,high,weight);
 	}
 	
 }
