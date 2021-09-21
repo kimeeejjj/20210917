@@ -21,7 +21,7 @@ public class FriendMain {// start of class
 				String name = readStr("친구의 이름을 입력하세요.");
 				String phone = readStr("친구의 연락처를 입력하세요.");
 				String email = readStr("친구의 이메일을 입력하세요.");
-				double high = readDouble("친구의 키를 입력하세요.");
+				double high = readDouble("친구의   키를 입력하세요.");
 				double weight = readDouble("친구의 몸무게를 입력하세요");
 
 				Friend friend = new Friend(name, phone, email, high, weight);
