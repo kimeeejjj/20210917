@@ -1,9 +1,10 @@
-package co.yedam.bank;
+package co.yedam.account;
 
 import java.util.Scanner;
+
 public class BankApplication {
 	private static Scanner scanner = new Scanner(System.in); 
-	static Account[] accounts = new Account[100];
+	private static Account[] accounts = new Account[100];
 	
 	public static void main(String[] args) {
 		
@@ -41,7 +42,7 @@ public class BankApplication {
 		}
 	} //end of main
 	
-	public static void createAccount() {
+	private static void createAccount() {
 		System.out.println("------");
 		System.out.println("계좌 생성");
 		System.out.println("------");
@@ -60,7 +61,7 @@ public class BankApplication {
 		System.out.println("결과 : 계좌가 생성되었습니다.");
 		
 	}
-	public static void accountList() {
+	private static void accountList() {
 		for(Account account : accounts) {
 			if(account !=null ) {
 				account.showInfo();
@@ -68,7 +69,7 @@ public class BankApplication {
 		}
 		
 	}
-	public static void deposit() {
+	private static void deposit() {
 		System.out.println("------");
 		System.out.println("예금");
 		System.out.println("------");
@@ -82,7 +83,7 @@ public class BankApplication {
 	System.out.println("결과 : 예금이 성공되었습니다.");
 		
 	}
-	public static void withdraw() {
+	private static void withdraw() {
 		System.out.println("------");
 		System.out.println("출금");
 		System.out.println("------");
@@ -102,12 +103,12 @@ public class BankApplication {
 		
 	}
 	
-	public static String readStr(String msg) {
+	private static String readStr(String msg) {
 		System.out.println(msg);
 		return scanner.nextLine();
 		
 	}
-	public static int readInt(String msg) {
+	private static int readInt(String msg) {
 		System.out.println(msg);
 		return scanner.nextInt();
 	}

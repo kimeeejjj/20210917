@@ -34,7 +34,10 @@ public class MemberExample {
 		for (Member mm : members) {
 			mm.showInfo();
 		}
-	
+		
+		Student s1 = new Student();
+		s1.name="Hong";
+		s1.score=90;
 	}
   }
 }

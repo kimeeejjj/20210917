@@ -1,4 +1,4 @@
-package co.yedam.bank;
+package co.yedam.account;
 
 public class Account {
 	//ÇÊµå

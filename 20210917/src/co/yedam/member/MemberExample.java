@@ -1,5 +1,7 @@
 package co.yedam.member;
 
+import co.yedam.Student;
+
 public class MemberExample {
 	public static void main(String[] args) {
 		Member m1 = new Member("user1","박미림","대구중구 내일동"); //생성자호출, 생성자인지 어떻게 아냐면 컨트롤클릭해보면 해당 클래스로 이동
@@ -29,6 +31,8 @@ public class MemberExample {
 		m3.setName("박길동");
 		m3.showInfo();
 	
-		
+		Student s1 = new Student(); //co.yedam Student클래스 public이니 접근가능
+//		s1.name="Hong"; co.yedam Student클래스의 default값의 필드이므로 접근불가
+//		s1.score=90; default값은 동일한 패키지에서만 접근가능
 	}
 }
